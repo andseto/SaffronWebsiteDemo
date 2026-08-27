@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap">
+<style>
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: #F6F2EB; color: #211D18; font-family: Jost, system-ui, sans-serif; font-weight: 400; font-size: 18px; line-height: 1.72; letter-spacing: 0.01em; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+a { color: #A9762A; text-decoration: none; }
+a:hover { color: #211D18; }
+::selection { background: rgba(169,118,42,0.22); }
+:focus-visible { outline: 1px solid #A9762A; outline-offset: 3px; }
+img { display: block; max-width: 100%; }
+</style>
+</helmet>
+
+<div style="background: #F6F2EB">
+
+<header style="position: sticky; top: 0; z-index: 80; background: rgba(246,242,235,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(33,29,24,0.1)">
+  <div style="max-width: 1280px; margin: 0 auto; padding: 20px clamp(24px, 5vw, 80px); display: flex; align-items: center; gap: clamp(20px, 4vw, 56px)">
+    <a href="Saffron Indian Bistro.dc.html#home" style="margin-right: auto; display: block; line-height: 0"><img src="uploads/saffron_logo_transparent.png" alt="Saffron Indian Bistro" style="height: 34px; width: auto"></a>
+    <nav style="display: flex; align-items: center; gap: clamp(18px, 2.4vw, 38px)">
+      <a href="Saffron Indian Bistro.dc.html#home" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Home</a>
+      <a href="Saffron Indian Bistro.dc.html#about" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">About</a>
+      <a href="#menu" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Menu</a>
+      <a href="Saffron Indian Bistro.dc.html#location" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Location</a>
+      <a href="#contact" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Contact</a>
+    </nav>
+    <a href="tel:+16235817576" style="display: inline-flex; align-items: center; gap: 9px; font-size: 12.5px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: #F6F2EB; background: #211D18; padding: 12px 22px; white-space: nowrap" style-hover="background: #A9762A; color: #F6F2EB">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+      (623) 581-7576
+    </a>
+  </div>
+</header>
+
+<div style="background: #211D18; color: #F6F2EB">
+  <div style="max-width: 1280px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px); display: flex; flex-wrap: wrap; gap: 0 clamp(24px, 4vw, 56px)">
+    <div style="flex: 1 1 260px; min-width: 0; display: flex; gap: 14px; align-items: flex-start; padding: 26px 0; border-top: 1px solid rgba(246,242,235,0.16)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79A45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 5px"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span style="font-size: 16.5px; line-height: 1.6; color: rgba(246,242,235,0.92)">4330 W Union Hills Dr<br>Glendale, AZ 85308</span>
+    </div>
+    <div style="flex: 1 1 260px; min-width: 0; display: flex; gap: 14px; align-items: flex-start; padding: 26px 0; border-top: 1px solid rgba(246,242,235,0.16)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79A45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 5px"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+      <span style="font-size: 16.5px; line-height: 1.6; color: rgba(246,242,235,0.92)"><a href="tel:+16235817576" style="color: #F6F2EB">(623) 581-7576</a><br>Dine in &amp; takeout</span>
+    </div>
+    <div style="flex: 1 1 260px; min-width: 0; display: flex; gap: 14px; align-items: flex-start; padding: 26px 0; border-top: 1px solid rgba(246,242,235,0.16)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79A45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 5px"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      <span style="font-size: 16.5px; line-height: 1.6; color: rgba(246,242,235,0.92)">Tuesday – Sunday from 12 PM<br>Closed Mondays</span>
+    </div>
+  </div>
+</div>
+
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(28px, 4vw, 52px) clamp(24px, 5vw, 80px) 0">
+  <a href="Saffron Indian Bistro.dc.html" style="display: inline-flex; align-items: center; gap: 10px; font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(33,29,24,0.72)" style-hover="color: #A9762A">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+    Back to home
+  </a>
+</div>
+
+<section id="menu" style="scroll-margin-top: 72px; max-width: 1280px; margin: 0 auto; padding: clamp(26px, 3vw, 44px) clamp(24px, 5vw, 80px) clamp(64px, 8vw, 112px)">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(24px, 4vw, 72px); align-items: end; padding-bottom: clamp(32px, 4vw, 56px); border-bottom: 1px solid rgba(33,29,24,0.14)">
+    <div>
+      <span style="display: block; font-size: 11.5px; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: #A9762A; margin-bottom: clamp(18px, 2.4vw, 26px)">The menu</span>
+      <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(36px, 5vw, 68px); line-height: 1.04; letter-spacing: -0.012em; margin: 0">Everything we serve</h2>
+    </div>
+    <div style="display: flex; gap: 12px 26px; flex-wrap: wrap; align-items: center; font-size: 12.5px; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(33,29,24,0.8)">
+      <span style="display: inline-flex; align-items: center; gap: 10px"><span style="font-size: 10px; letter-spacing: 0.14em; color: #A9762A; border: 1px solid rgba(169,118,42,0.45); padding: 2px 7px">GF</span> Gluten free</span>
+      <span style="display: inline-flex; align-items: center; gap: 10px"><span style="font-size: 10px; letter-spacing: 0.14em; color: #A9762A; border: 1px solid rgba(169,118,42,0.45); padding: 2px 7px">Vegan</span> Plant based</span>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">01</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">Appetizers</h3>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Papri Chaat</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Crisp fried dough wafers topped with potatoes, yogurt, a medley of chutneys, garnishes and fresh pomegranate.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Vegetable Pakora<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Fresh vegetables marinated with spices, dipped in chickpea batter and fried to a crisp.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Pani Puri<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">Vegan</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Hollow pastry shells with potatoes, garbanzo beans and spice-infused water.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Samosa<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">Vegan</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">3 each</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Fried pastry filled with potatoes, peas and spices, served with chutneys.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Samosa Chaat</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">10</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Fried pastry filled with spiced potatoes and peas, topped with garbanzo beans, yogurt and chutneys.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Grilled Chicken Tikka<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">16</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Grilled chicken marinated in yogurt and spices, tossed with bell peppers and onions.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Tandoori Murgh<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">17</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Street-marinated chicken, smoked and topped with a fresh lemon drizzle.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Wok Tossed Chili Paneer<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">16</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Homemade cheese tossed with peppers, onions and chili sauce.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Firecracker Chili Chicken</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">16</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Hand-breaded chicken sautéed with onions, spices and chili sauces.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Garlic Chili Shrimp<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">18</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Jumbo shrimp with peppers, onions and chili sauces.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">02</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">A La Carte Entrees</h3>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px 28px; padding: 14px 0 4px; border-top: 1px solid rgba(33,29,24,0.12); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(33,29,24,0.72)">
+      <span style="color: rgba(33,29,24,0.85)">Gravy base, then choose:</span>
+      <span>Vegetables +5</span>
+      <span>Paneer or Chicken +6</span>
+      <span>Savory Lamb +7</span>
+      <span>Jumbo Shrimp +7</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px); margin-top: 8px">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Tikka Masala<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Homemade creamy tomato-based sauce.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Butter Masala<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Old-fashioned butter-infused gravy with rich tomato flavor.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Spicy Vindaloo<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF · Vegan</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Black pepper curry with onions and spices.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Black Pepper Curry<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Mildly peppered creamy gravy.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Mughlai Korma<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Rich blush gravy, gently sweet and aromatic.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Coconut Curry<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF · Vegan</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">13</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Silky coconut curry.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Jalfrezi<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">12</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Wok-tossed peppers and onions in a fusion tomato gravy.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">03</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">Strictly Vegetarian</h3>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Dal Makhani<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">16</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Whole black lentils in rich creamy gravy, garnished with cilantro.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Mughlai Aloo<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">15</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Seasoned roasted potatoes in blush gravy.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Channa Masala<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF · Vegan</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">15</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Chickpeas in spicy gravy with a drizzle of citrus.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Mattar Paneer<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">18</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Farmer's cheese and peas in creamy tomato-based gravy.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Saag Paneer<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">17</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Homemade farmer's cheese in pureed spinach curry.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Malai Kofta</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">18</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Raisin-stuffed potato and cheese-curd dumplings in silky tomato gravy.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Mughlai Masala Baingan<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">17</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Eggplant in savory gravy with freshly ground whole spices.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">04</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">Chef Inspired Specials</h3>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Paneer Wrap</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">18</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Farmer's cheese marinated in tikka sauce with peppers and onions, wrapped in warm naan, served with fries.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Chicken Wrap</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">18</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Spiced chicken in warm naan, served with fries.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Saffron Biryani<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">16 – 20</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Fragrant basmati rice with vegetables 16, chicken 18, or lamb 20.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Channa Bhatura<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">16</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Slow-cooked garbanzo beans in gravy with fluffy fry bread.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Gobi Manchurian<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">Vegan</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">17</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Battered crispy cauliflower in tangy spiced sauce.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Vegetarian Korma<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">14</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Paneer and mixed vegetables in tomato-infused gravy.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Hakka Noodles</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">15</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Crisp noodles with stir-fried vegetables. Add chicken +3.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px; flex-wrap: wrap">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">05</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">Kids Menu</h3>
+      <span style="font-size: 12.5px; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(33,29,24,0.66)">Served with ice cream</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Orange Chicken</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">8</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Hand-breaded chicken in tangy sauce, served with rice.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Chicken Nugget Basket</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">8</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Seasoned chicken chunks with fries.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Vegetable Hakka Noodles</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">8</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Noodles with stir-fried vegetables. Add chicken +3.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">06</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">On The Side</h3>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Tandoori Roti</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">3</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Plain Naan</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">3</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Garlic Naan</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">3.50</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Garlic Paneer Naan</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">4.50</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Chili Naan</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">4.50</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Bhatura</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">4</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Spiced Onions</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">2</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Mint Chutney</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">1</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Tamarind Chutney</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">1</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Spicy House Pickle</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">2</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Raita</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">3</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Rice, small</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">3</span></div>
+      <div style="display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-top: 1px solid rgba(33,29,24,0.12)"><span style="font-size: 17px; color: rgba(33,29,24,0.92)">Rice, large</span><span style="font-size: 17px; font-weight: 500; color: #8C5C18">5</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">07</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">Something Sweet</h3>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Gulab Jamun, 2 pieces</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">5</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Milk-based dumplings topped with almonds and cardamom.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Ras Malai, 2 pieces</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">5</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Flour-based cheesecake-like dessert topped with pistachio.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Pista Ice Cream<span style="margin-left: 9px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8C5C18; border: 1px solid rgba(140,92,24,0.5); padding: 2px 6px; white-space: nowrap">GF</span></h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">5</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Traditional churned pistachio ice cream.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Dessert of the Day</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">8</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Daily assorted cake slices or pastries.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px)">
+    <div style="display: flex; align-items: baseline; gap: 18px; padding-bottom: 10px">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">08</span>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin: 0">Beverages</h3>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); column-gap: clamp(36px, 5vw, 84px)">
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Assorted Soft Drinks</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">3</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Coke, Coke Zero, Sprite, unsweetened or raspberry iced tea, Mr. Pibb. Free refills.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Shikanjvi</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">4</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Hand-squeezed lemonade with ginger.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Twisted Saffron Soda</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">5</span>
+        <p style="grid-column: 1 / -1; margin: 8px 0 0; font-size: 16.5px; font-weight: 400; line-height: 1.62; color: rgba(33,29,24,0.82); max-width: 50ch">Blue raspberry, cherry or mango.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Saffron Chai</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">4</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Mango Lassi</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">5</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Rose Milk Shake</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">6</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Saffron Date Shake</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">6</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Coffee</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">3</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; column-gap: 28px; padding: 20px 0; border-top: 1px solid rgba(33,29,24,0.12); align-items: baseline">
+        <h4 style="font-size: 18px; font-weight: 500; letter-spacing: 0.01em; margin: 0">Iced Coffee</h4>
+        <span style="font-size: 17.5px; font-weight: 500; color: #8C5C18; font-feature-settings: 'tnum' 1; white-space: nowrap">5</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: clamp(44px, 5.5vw, 78px); border-top: 1px solid rgba(33,29,24,0.12)">
+    <button type="button" onClick="{{ toggleBar }}" style="width: 100%; display: flex; align-items: center; gap: 18px; background: transparent; border: 0; padding: 26px 0; cursor: pointer; text-align: left; font-family: inherit; color: #211D18" style-hover="color: #A9762A">
+      <span style="font-size: 12px; letter-spacing: 0.22em; font-weight: 500; color: #8C5C18">09</span>
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; margin-right: auto">Bar Menu</span>
+      <span style="font-size: 12.5px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(33,29,24,0.8)">{{ barLabel }}</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A9762A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transform: rotate({{ barRotate }}deg); transition: transform 240ms ease"><path d="m6 9 6 6 6-6"></path></svg>
+    </button>
+    <sc-if value="{{ barOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-wrap: wrap; gap: 0 clamp(36px, 5vw, 84px); padding-bottom: 12px">
+        <div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.12); padding: 24px 0 28px">
+          <h4 style="font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #A9762A; margin: 0 0 16px">Beer</h4>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>King Fisher · Taj Mahal · Imports · Assorted</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">7 / 13</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>Blue Moon · Heineken · Dos Equis XX</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">6 / 11</span></div>
+          <p style="margin: 12px 0 0; font-size: 15.5px; line-height: 1.6; color: rgba(33,29,24,0.78)">Small glass / pint.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.12); padding: 24px 0 28px">
+          <h4 style="font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #A9762A; margin: 0 0 16px">Wine</h4>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>Chardonnay · Pinot Grigio · Sauvignon Blanc</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">8 / 35</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>Merlot · Pinot Noir · Cabernet</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">8 / 35</span></div>
+          <p style="margin: 12px 0 0; font-size: 15.5px; line-height: 1.6; color: rgba(33,29,24,0.78)">By the glass / by the bottle.</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.12); padding: 24px 0 28px">
+          <h4 style="font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #A9762A; margin: 0 0 16px">Spirits</h4>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>Glenn Levit 12yr · Rampur Double Cast · Chivas Regal 12yr · Black Dog Triple Gold Reserve</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">13</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>Bacardi · Premium Vodka · Premium Tequila · Jack Daniels · Jim Beam</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">8</span></div>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.12); padding: 24px 0 28px">
+          <h4 style="font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #A9762A; margin: 0 0 16px">Mixed Drinks</h4>
+          <div style="display: flex; justify-content: space-between; gap: 18px; padding: 11px 0; font-size: 17px; color: rgba(33,29,24,0.9)"><span>Dirty Martini · Mango Martini · Mojito · Margarita · Adult Twisted Soda</span><span style="font-weight: 500; color: #8C5C18; white-space: nowrap">9</span></div>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px clamp(36px, 5vw, 84px); margin-top: clamp(40px, 5vw, 64px); padding-top: 28px; border-top: 1px solid rgba(33,29,24,0.12)">
+    <p style="margin: 0; font-size: 15.5px; line-height: 1.72; color: rgba(33,29,24,0.78); max-width: 46ch">Please notify our staff of any special dietary needs.</p>
+    <p style="margin: 0; font-size: 15.5px; line-height: 1.72; color: rgba(33,29,24,0.78); max-width: 60ch">Our meat, seafood and nuts are cooked separately to avoid cross-contamination. Dishes may include allergens from food packaging facilities. All patrons must present valid ID for alcohol purchases; alcohol may only be consumed inside the restaurant.</p>
+  </div>
+</section>
+
+<footer id="contact" style="scroll-margin-top: 72px; background: #191510; color: #F6F2EB">
+  <div style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 118px) clamp(24px, 5vw, 80px) clamp(36px, 4vw, 56px)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(40px, 5vw, 88px)">
+      <div>
+        <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.1; margin: 0 0 20px; max-width: 18ch">Come sit with us.</h2>
+        <p style="margin: 0; max-width: 34ch; color: rgba(246,242,235,0.8)">A table is ready, the spices are ground fresh this morning, and the tandoor is already hot. We would love to cook for you.</p>
+      </div>
+      <div>
+        <span style="display: block; font-size: 11.5px; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(246,242,235,0.68); margin-bottom: 20px">Contact</span>
+        <p style="margin: 0 0 10px"><a href="tel:+16235817576" style="color: #F6F2EB">(623) 581-7576</a></p>
+        <p style="margin: 0; color: rgba(246,242,235,0.8)">4330 W Union Hills Dr<br>Glendale, AZ 85308</p>
+      </div>
+      <div>
+        <span style="display: block; font-size: 11.5px; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(246,242,235,0.68); margin-bottom: 20px">Follow</span>
+        <div style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+          <a href="https://facebook.com/SaffronAZ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; color: #F6F2EB; font-size: 16.5px" style-hover="color: #C79A45">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            facebook.com/SaffronAZ
+          </a>
+          <a href="https://instagram.com/Saffronglendale_AZ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; color: #F6F2EB; font-size: 16.5px" style-hover="color: #C79A45">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            @Saffronglendale_AZ
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: clamp(48px, 6vw, 88px); padding-top: 24px; border-top: 1px solid rgba(246,242,235,0.16); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(246,242,235,0.66)">
+      <span>Saffron Indian Bistro · Glendale, Arizona</span>
+      <span>Family owned &amp; operated</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:1000}}">
+class Component extends DCLogic {
+  state = { bar: false };
+  renderVals() {
+    const bar = this.state.bar;
+    return {
+      barOpen: bar,
+      barLabel: bar ? 'Hide' : 'Beer · Wine · Spirits',
+      barRotate: bar ? 180 : 0,
+      toggleBar: () => this.setState(s => ({ bar: !s.bar })),
+    };
+  }
+}
+</script>
+</body>
+</html>

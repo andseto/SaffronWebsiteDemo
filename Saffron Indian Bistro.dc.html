@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap">
+<style>
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: #F6F2EB; color: #211D18; font-family: Jost, system-ui, sans-serif; font-weight: 400; font-size: 18px; line-height: 1.72; letter-spacing: 0.01em; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+a { color: #A9762A; text-decoration: none; }
+a:hover { color: #211D18; }
+::selection { background: rgba(169,118,42,0.22); }
+:focus-visible { outline: 1px solid #A9762A; outline-offset: 3px; }
+img { display: block; max-width: 100%; }
+</style>
+</helmet>
+
+<div style="background: #F6F2EB">
+
+<header style="position: sticky; top: 0; z-index: 80; background: rgba(246,242,235,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(33,29,24,0.1)">
+  <div style="max-width: 1280px; margin: 0 auto; padding: 20px clamp(24px, 5vw, 80px); display: flex; align-items: center; gap: clamp(20px, 4vw, 56px)">
+    <a href="#home" style="margin-right: auto; display: block; line-height: 0"><img src="uploads/saffron_logo_transparent.png" alt="Saffron Indian Bistro" style="height: 34px; width: auto"></a>
+    <nav style="display: flex; align-items: center; gap: clamp(18px, 2.4vw, 38px)">
+      <a href="#home" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Home</a>
+      <a href="#about" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">About</a>
+      <a href="Saffron Menu.dc.html" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Menu</a>
+      <a href="#location" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Location</a>
+      <a href="#contact" style="font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; padding-bottom: 3px; border-bottom: 1px solid transparent" style-hover="border-bottom-color: #A9762A; color: #A9762A">Contact</a>
+    </nav>
+    <a href="tel:+16235817576" style="display: inline-flex; align-items: center; gap: 9px; font-size: 12.5px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: #F6F2EB; background: #211D18; padding: 12px 22px; white-space: nowrap" style-hover="background: #A9762A; color: #F6F2EB">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+      (623) 581-7576
+    </a>
+  </div>
+</header>
+
+<section id="home" style="scroll-margin-top: 72px; position: relative; min-height: clamp(560px, 86vh, 900px); display: flex; align-items: flex-end; background-image: linear-gradient(to top, rgba(20,17,13,0.86) 0%, rgba(20,17,13,0.42) 45%, rgba(20,17,13,0.34) 100%), url('uploads/1787802772197_image.png'); background-size: cover; background-position: center 38%">
+  <div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: clamp(56px, 9vw, 120px) clamp(24px, 5vw, 80px) clamp(48px, 7vw, 88px)">
+    <span style="display: block; font-size: 11.5px; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(246,242,235,0.82); margin-bottom: clamp(20px, 3vw, 34px)">Glendale, Arizona · Est. family owned</span>
+    <h1 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(48px, 8vw, 116px); line-height: 0.98; letter-spacing: -0.015em; color: #F6F2EB; margin: 0; max-width: 14ch">Saffron Indian Bistro</h1>
+    <p style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 300; font-size: clamp(20px, 2.4vw, 30px); line-height: 1.4; color: rgba(246,242,235,0.92); margin: clamp(22px, 3vw, 34px) 0 0; max-width: 30ch">Arizona's most authentic Indian bistro.</p>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: clamp(30px, 4vw, 46px)">
+      <a href="Saffron Menu.dc.html" style="display: inline-flex; align-items: center; gap: 10px; font-size: 12.5px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: #211D18; background: #F6F2EB; padding: 15px 28px" style-hover="background: #A9762A; color: #F6F2EB">
+        View the menu
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#location" style="display: inline-flex; align-items: center; gap: 10px; font-size: 12.5px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: #F6F2EB; border: 1px solid rgba(246,242,235,0.45); padding: 15px 28px" style-hover="border-color: #F6F2EB; background: rgba(246,242,235,0.1)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Find us
+      </a>
+    </div>
+  </div>
+</section>
+
+<div style="background: #211D18; color: #F6F2EB">
+  <div style="max-width: 1280px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 80px); display: flex; flex-wrap: wrap; gap: 0 clamp(24px, 4vw, 56px)">
+    <div style="flex: 1 1 260px; min-width: 0; display: flex; gap: 14px; align-items: flex-start; padding: 26px 0; border-top: 1px solid rgba(246,242,235,0.16)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79A45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 5px"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span style="font-size: 16.5px; line-height: 1.6; color: rgba(246,242,235,0.92)">4330 W Union Hills Dr<br>Glendale, AZ 85308</span>
+    </div>
+    <div style="flex: 1 1 260px; min-width: 0; display: flex; gap: 14px; align-items: flex-start; padding: 26px 0; border-top: 1px solid rgba(246,242,235,0.16)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79A45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 5px"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+      <span style="font-size: 16.5px; line-height: 1.6; color: rgba(246,242,235,0.92)"><a href="tel:+16235817576" style="color: #F6F2EB">(623) 581-7576</a><br>Dine in &amp; takeout</span>
+    </div>
+    <div style="flex: 1 1 260px; min-width: 0; display: flex; gap: 14px; align-items: flex-start; padding: 26px 0; border-top: 1px solid rgba(246,242,235,0.16)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79A45" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 5px"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      <span style="font-size: 16.5px; line-height: 1.6; color: rgba(246,242,235,0.92)">Tuesday – Sunday from 12 PM<br>Closed Mondays</span>
+    </div>
+  </div>
+</div>
+
+<section id="about" style="scroll-margin-top: 72px; max-width: 1280px; margin: 0 auto; padding: clamp(72px, 10vw, 148px) clamp(24px, 5vw, 80px) clamp(56px, 7vw, 96px)">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start">
+    <div>
+      <span style="display: block; font-size: 11.5px; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: #A9762A; margin-bottom: clamp(20px, 3vw, 30px)">Our kitchen</span>
+      <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.08; letter-spacing: -0.01em; margin: 0; max-width: 18ch">Prepared the old-fashioned Indian way — with affection.</h2>
+    </div>
+    <div style="padding-top: clamp(0px, 1.6vw, 26px)">
+      <p style="margin: 0 0 22px; max-width: 50ch; color: rgba(33,29,24,0.9)">Saffron is committed to serving you and your family the very best. We build each dish on the freshest produce the season offers, and cook it the way it has always been cooked at home: patiently, and with care.</p>
+      <p style="margin: 0; max-width: 50ch; color: rgba(33,29,24,0.76)">Our meals are made with kosher salt and minimal oil or butter — the depth comes from freshly ground aromatic spices instead. Every plate carries bold flavor without ever being greasy.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 0 clamp(32px, 4vw, 72px); margin-top: clamp(56px, 7vw, 104px)">
+    <div style="flex: 1 1 250px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.14); padding: 30px 0">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9762A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"></path><path d="M10 20c5.5-2.5.8-6.4 3-10"></path><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"></path></svg>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 25px; line-height: 1.2; margin: 24px 0 10px">Fresh Vegetables &amp; Lentils</h3>
+      <p style="margin: 0; font-size: 16.5px; line-height: 1.65; color: rgba(33,29,24,0.76)">Seasonal produce and whole lentils, simmered slowly rather than shortcut.</p>
+    </div>
+    <div style="flex: 1 1 250px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.14); padding: 30px 0">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9762A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"></path><path d="M6 17h12"></path></svg>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 25px; line-height: 1.2; margin: 24px 0 10px">Handmade Appetizers</h3>
+      <p style="margin: 0; font-size: 16.5px; line-height: 1.65; color: rgba(33,29,24,0.76)">Samosas folded, chaats layered and pakoras battered to order in our kitchen.</p>
+    </div>
+    <div style="flex: 1 1 250px; min-width: 0; border-top: 1px solid rgba(33,29,24,0.14); padding: 30px 0">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A9762A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12.5" cy="8.5" r="2.5"></circle><path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3a6.5 6.5 0 0 0-3.9-11.7Z"></path><path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"></path></svg>
+      <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; font-size: 25px; line-height: 1.2; margin: 24px 0 10px">Organic, Never-Frozen Meats</h3>
+      <p style="margin: 0; font-size: 16.5px; line-height: 1.65; color: rgba(33,29,24,0.76)">Marinated the day they are cooked, then finished over open tandoor heat.</p>
+    </div>
+  </div>
+</section>
+
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(16px, 3vw, 40px) clamp(24px, 5vw, 80px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(520px, 1fr)); gap: clamp(16px, 2vw, 28px)">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: clamp(16px, 2vw, 28px)">
+    <figure style="margin: 0"><img src="uploads/1787802797381_image.png" alt="Butter masala with garlic naan and rice" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></figure>
+    <figure style="margin: 0"><img src="uploads/1787802897618_image.png" alt="Samosa chaat with pomegranate" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></figure>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: clamp(16px, 2vw, 28px)">
+    <figure style="margin: 0"><img src="uploads/1787802810748_image.png" alt="Vegetarian korma" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></figure>
+    <figure style="margin: 0"><img src="uploads/1787802839700_image.png" alt="Paneer jalfrezi" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></figure>
+  </div>
+</div>
+
+<section style="background: #211D18; color: #F6F2EB; margin-top: clamp(56px, 7vw, 104px)">
+  <div style="max-width: 1280px; margin: 0 auto; padding: clamp(56px, 7vw, 104px) clamp(24px, 5vw, 80px)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(36px, 5vw, 88px); align-items: end">
+      <div>
+        <span style="display: block; font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: #C79A45; margin-bottom: clamp(18px, 2.4vw, 28px)">Nine chapters</span>
+        <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.06; margin: 0; max-width: 20ch">Read the full menu</h2>
+        <p style="margin: 24px 0 0; max-width: 44ch; color: rgba(246,242,235,0.8)">From handmade chaat and tandoor plates to gravies built to order, strictly vegetarian classics, sides, sweets and the bar.</p>
+      </div>
+      <div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0 32px; margin-bottom: 34px">
+          <div style="border-top: 1px solid rgba(246,242,235,0.2); padding: 14px 0; font-size: 16px; color: rgba(246,242,235,0.86)">Appetizers</div>
+          <div style="border-top: 1px solid rgba(246,242,235,0.2); padding: 14px 0; font-size: 16px; color: rgba(246,242,235,0.86)">A La Carte</div>
+          <div style="border-top: 1px solid rgba(246,242,235,0.2); padding: 14px 0; font-size: 16px; color: rgba(246,242,235,0.86)">Vegetarian</div>
+          <div style="border-top: 1px solid rgba(246,242,235,0.2); padding: 14px 0; font-size: 16px; color: rgba(246,242,235,0.86)">Chef Specials</div>
+          <div style="border-top: 1px solid rgba(246,242,235,0.2); padding: 14px 0; font-size: 16px; color: rgba(246,242,235,0.86)">Sweets</div>
+          <div style="border-top: 1px solid rgba(246,242,235,0.2); padding: 14px 0; font-size: 16px; color: rgba(246,242,235,0.86)">Bar</div>
+        </div>
+        <a href="Saffron Menu.dc.html" style="display: inline-flex; align-items: center; gap: 12px; font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #211D18; background: #F6F2EB; padding: 17px 32px" style-hover="background: #C79A45; color: #191510">
+          See the whole menu
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location" style="scroll-margin-top: 72px; background: #EFEAE1; border-top: 1px solid rgba(33,29,24,0.1)">
+  <div style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 120px) clamp(24px, 5vw, 80px)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(40px, 5vw, 88px); align-items: start">
+      <div>
+        <span style="display: block; font-size: 11.5px; letter-spacing: 0.28em; text-transform: uppercase; color: #A9762A; margin-bottom: clamp(18px, 2.4vw, 28px)">Visit us</span>
+        <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(32px, 4vw, 54px); line-height: 1.08; margin: 0 0 28px; max-width: 16ch">Location &amp; hours</h2>
+        <p style="margin: 0 0 8px; font-size: 17px">4330 W Union Hills Dr<br>Glendale, AZ 85308</p>
+        <p style="margin: 0 0 32px"><a href="tel:+16235817576" style="font-size: 17px">(623) 581-7576</a></p>
+        <div style="max-width: 420px">
+          <div style="display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(33,29,24,0.14); font-size: 17px"><span style="letter-spacing: 0.06em">Monday</span><span style="color: rgba(33,29,24,0.66)">Closed</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(33,29,24,0.14); font-size: 17px"><span style="letter-spacing: 0.06em">Tuesday – Thursday</span><span style="font-weight: 500; color: #8C5C18">3:00 – 8:00 PM</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(33,29,24,0.14); font-size: 17px"><span style="letter-spacing: 0.06em">Friday</span><span style="font-weight: 500; color: #8C5C18">1:00 – 8:00 PM</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(33,29,24,0.14); font-size: 17px"><span style="letter-spacing: 0.06em">Saturday</span><span style="font-weight: 500; color: #8C5C18">12:00 – 8:00 PM</span></div>
+          <div style="display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-top: 1px solid rgba(33,29,24,0.14); border-bottom: 1px solid rgba(33,29,24,0.14); font-size: 17px"><span style="letter-spacing: 0.06em">Sunday</span><span style="font-weight: 500; color: #8C5C18">12:30 – 7:00 PM</span></div>
+          <p style="margin: 18px 0 0; font-size: 16px; line-height: 1.6; color: rgba(33,29,24,0.8)">Last order is taken a half hour before closing.</p>
+        </div>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps?q=4330+W+Union+Hills+Dr,+Glendale,+AZ+85308&output=embed" title="Map of Saffron Indian Bistro, 4330 W Union Hills Dr, Glendale, AZ" loading="lazy" referrerPolicy="no-referrer-when-downgrade" style="width: 100%; aspect-ratio: 4 / 3; border: 1px solid rgba(33,29,24,0.14); display: block; filter: saturate(0.72) contrast(1.02)"></iframe>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=4330+W+Union+Hills+Dr+Glendale+AZ+85308" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; font-size: 12.5px; letter-spacing: 0.15em; text-transform: uppercase">
+          Get directions
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" style="scroll-margin-top: 72px; background: #191510; color: #F6F2EB">
+  <div style="max-width: 1280px; margin: 0 auto; padding: clamp(64px, 8vw, 118px) clamp(24px, 5vw, 80px) clamp(36px, 4vw, 56px)">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(40px, 5vw, 88px)">
+      <div>
+        <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.1; margin: 0 0 20px; max-width: 18ch">Come sit with us.</h2>
+        <p style="margin: 0; max-width: 34ch; color: rgba(246,242,235,0.8)">A table is ready, the spices are ground fresh this morning, and the tandoor is already hot. We would love to cook for you.</p>
+      </div>
+      <div>
+        <span style="display: block; font-size: 11.5px; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(246,242,235,0.68); margin-bottom: 20px">Contact</span>
+        <p style="margin: 0 0 10px"><a href="tel:+16235817576" style="color: #F6F2EB">(623) 581-7576</a></p>
+        <p style="margin: 0; color: rgba(246,242,235,0.8)">4330 W Union Hills Dr<br>Glendale, AZ 85308</p>
+      </div>
+      <div>
+        <span style="display: block; font-size: 11.5px; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(246,242,235,0.68); margin-bottom: 20px">Follow</span>
+        <div style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+          <a href="https://facebook.com/SaffronAZ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; color: #F6F2EB; font-size: 16.5px" style-hover="color: #C79A45">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            facebook.com/SaffronAZ
+          </a>
+          <a href="https://instagram.com/Saffronglendale_AZ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; color: #F6F2EB; font-size: 16.5px" style-hover="color: #C79A45">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            @Saffronglendale_AZ
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: clamp(48px, 6vw, 88px); padding-top: 24px; border-top: 1px solid rgba(246,242,235,0.16); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(246,242,235,0.66)">
+      <span>Saffron Indian Bistro · Glendale, Arizona</span>
+      <span>Family owned &amp; operated</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:1000}}">
+class Component extends DCLogic {
+  state = { bar: false };
+  renderVals() {
+    const bar = this.state.bar;
+    return {
+      barOpen: bar,
+      barLabel: bar ? 'Hide' : 'Beer · Wine · Spirits',
+      barRotate: bar ? 180 : 0,
+      toggleBar: () => this.setState(s => ({ bar: !s.bar })),
+    };
+  }
+}
+</script>
+</body>
+</html>
