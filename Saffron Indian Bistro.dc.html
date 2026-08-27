@@ -20,6 +20,31 @@ a:hover { color: #211D18; }
 ::selection { background: rgba(169,118,42,0.22); }
 :focus-visible { outline: 1px solid #A9762A; outline-offset: 3px; }
 img { display: block; max-width: 100%; }
+@media (max-width: 700px) {
+  body { font-size: 16px; overflow-x: hidden; }
+  header > div { padding: 14px 18px !important; gap: 14px !important; flex-wrap: wrap; }
+  header nav { order: 3; flex: 1 1 100%; justify-content: space-between; gap: 8px !important; }
+  header nav a { font-size: 10px !important; letter-spacing: 0.08em !important; }
+  header > div > a:last-child { padding: 10px 12px !important; font-size: 10px !important; letter-spacing: 0.08em !important; }
+  header img { height: 28px !important; }
+  section#home { min-height: 620px !important; background-position: 58% center !important; }
+  section#home > div { padding: 48px 18px 42px !important; }
+  section#home h1 { font-size: clamp(44px, 15vw, 68px) !important; }
+  section#home p { font-size: 22px !important; }
+  section#home a { padding: 13px 18px !important; font-size: 10px !important; }
+  section#about, section#location, footer > div { padding-left: 18px !important; padding-right: 18px !important; }
+  section#about { padding-top: 68px !important; }
+  section#about > div:first-child, section#location > div > div, footer > div > div { grid-template-columns: 1fr !important; gap: 36px !important; }
+  section#about h2, section#location h2, footer h2 { font-size: 42px !important; }
+  section#about > div:nth-child(2) { gap: 0 !important; }
+  div[style*="minmax(520px"] { grid-template-columns: 1fr !important; padding-left: 18px !important; padding-right: 18px !important; }
+  div[style*="minmax(520px"] > div { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+  section#location > div { padding-top: 68px !important; padding-bottom: 68px !important; }
+  section#location > div > div { gap: 34px !important; }
+  section#location > div > div > div:first-child > div { font-size: 15px !important; }
+  footer > div { padding-top: 68px !important; }
+  footer > div > div:last-child { gap: 8px !important; }
+}
 </style>
 </helmet>
 
